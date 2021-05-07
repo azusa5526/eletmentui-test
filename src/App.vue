@@ -1,32 +1,24 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+	<div id="app">
+		<el-container>
+			<el-header>Header</el-header>
+			<el-main>
+				<div>main</div>
+				<el-row>
+					<el-button type="primary" class="fs-1">primary</el-button>
+					<el-button type="success" class="fs-2">success</el-button>
+					<el-button type="info" class="fs-3">info</el-button>
+					<el-button type="warning" class="fs-4">warning</el-button>
+					<el-button type="danger" class="fs-5">danger</el-button>
+					<el-button>default</el-button>
+				</el-row>
+			</el-main>
+			<el-footer>Footer</el-footer>
+		</el-container>
+		<!-- <router-view /> -->
+	</div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+@import './assets/scss/all.scss';
 </style>

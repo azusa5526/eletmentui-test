@@ -1,0 +1,15 @@
+/* Normalize.css */
+@import './helper/normalize';
+
+/* Boostrap5 required */
+@import '~bootstrap/scss/functions';
+@import './helper/_bootstrap5-variables.scss'; //custom
+@import '~bootstrap/scss/mixins/';
+
+/* Bootstrap optional */
+@import '~bootstrap/scss/utilities';
+@import '~bootstrap/scss/utilities/api';
+@import '~bootstrap/scss/helpers';
+
+/* Custom scss */
+@import './global';
